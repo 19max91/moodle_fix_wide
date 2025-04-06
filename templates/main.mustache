@@ -1,0 +1,31 @@
+<table class="table admintable text-center">
+    <head>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>E-mail</th>
+            <th>Timecreated</th>
+            <th>Timemodified</th>
+        </tr>
+    </head>
+    <tbody>
+    {{#data}}
+        <tr>
+            <td>{{firstname}}</td>
+            <td>{{lastname}}</td>
+            <td>{{email}}</td>
+            <td>{{timecreated}}</td>
+            <td>{{timemodified}}</td>
+        </tr>
+    {{/data}}
+    {{^data}}
+        <tr>
+            <td colspan="4" class="text-center">
+                No data to display. Add a record
+            </td>
+        </tr>
+    {{/data}}
+    </tbody>
+</table>
+
+<hr>
